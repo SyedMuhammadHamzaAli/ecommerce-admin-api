@@ -49,3 +49,40 @@ uvicorn app.main:app --reload
 
 ### API will be accessible at: http://127.0.0.1:8000
 ### Swagger UI docs: /docs
+
+## 🗂 API Endpoints
+
+### 🧾 Products
+
+| Method | Endpoint              | Description                    |
+|--------|------------------------|--------------------------------|
+| GET    | `/products/`           | Fetch all registered products. |
+| POST   | `/products/register`   | Register a new product.        |
+
+---
+
+### 📝 POST `/products/register`
+
+Registers a new product.
+
+#### 📥 Request Body:
+
+```json
+{
+  "name": "Smartphone",
+  "category": "Electronics",
+  "price": 299.99
+}
+```
+#### 📤 Response:
+```
+{
+  "message": "✅ Product registered successfully",
+  "product": {
+    "id": 1,
+    "name": "Smartphone",
+    "category": "Electronics",
+    "price": 299.99
+  }
+}
+```
