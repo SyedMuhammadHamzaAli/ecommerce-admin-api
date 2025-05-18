@@ -52,7 +52,7 @@ uvicorn app.main:app --reload
 
 ## 🗂 API Endpoints
 
-### 🧾 Products
+## 🧾 Products
 
 | Method | Endpoint              | Description                    |
 |--------|------------------------|--------------------------------|
@@ -86,7 +86,7 @@ Registers a new product.
   }
 }
 ```
-#### 📦 Inventory
+## 📦 Inventory
 
 | Method | Endpoint                          | Description                                   |
 |--------|-----------------------------------|-----------------------------------------------|
