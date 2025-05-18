@@ -86,3 +86,41 @@ Registers a new product.
   }
 }
 ```
+### 📦 Inventory
+
+| Method | Endpoint                          | Description                                   |
+|--------|-----------------------------------|-----------------------------------------------|
+| GET    | `/inventory/`                     | Get all inventory items (paginated).          |
+| GET    | `/inventory/low-stock`            | Get items with stock below threshold.         |
+| PUT    | `/inventory/update`               | Update stock and log history.                 |
+| GET    | `/inventory/{product_id}/history` | Get stock change history for a product.       |
+
+---
+
+### 📋 GET `/inventory/?skip=0&limit=10`
+
+Returns paginated inventory records.
+
+---
+
+### 📉 GET `/inventory/low-stock?threshold=5`
+
+Lists products with stock below a threshold (default threshold is 10).
+
+---
+
+### ✏️ PUT `/inventory/update`
+
+Updates stock for a product and logs the change history.
+
+#### 📥 Request Body:
+
+```json
+{
+  "product_id": 1,
+  "stock": 50
+}
+```
+### 📜 GET /inventory/1/history
+
+Returns historical stock changes for product with ID 
