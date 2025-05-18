@@ -6,15 +6,14 @@ This is a backend E-Commerce Admin API developed using FastAPI and PostgreSQL. I
 
 ## 📁 Project Structure
 
-app/
-├── db/
-│ ├── database.py # DB connection
-│ ├── models.py # SQLAlchemy models
-│
-├── routes/
-│ ├── products.py # Product registration & listing
-│ ├── inventory.py # Inventory tracking
-│ ├── sales.py # Sales analytics
-│
-├── main.py # FastAPI entry point
-└── seed_db.py # Demo data seeding
+
+---
+
+## 🛠 Setup Instructions
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/SyedMuhammadHamzaAli/ecommerce-admin-api.git
+cd ecommerce-admin-api
+
