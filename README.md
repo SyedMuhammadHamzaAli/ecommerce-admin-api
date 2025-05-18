@@ -173,3 +173,27 @@ Returns weekly sales summaries for the *Books* category.
 
 Returns the top 5 best-selling products in the *Books* category.
 
+## 🧩 Dependencies
+
+The project uses the following key dependencies:
+
+- **FastAPI** – Web framework for building APIs
+- **SQLAlchemy** – ORM for interacting with the PostgreSQL database
+- **Uvicorn** – ASGI server for running FastAPI
+- **Psycopg2** – PostgreSQL database adapter
+- **Pydantic** – Data validation and settings management
+
+📦 **Install all dependencies via:**
+
+```bash
+pip install -r requirements.txt
+```
+
+### 🧪 Sample Data
+
+You can populate the database with demo products, inventory, and sales data by running the seed script:
+```bash
+python seed_db.py
+
+python -m app.seed_db --force
+```
