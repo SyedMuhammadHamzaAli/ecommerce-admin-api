@@ -19,17 +19,15 @@ cd ecommerce-admin-api
 
 2. Create and activate a virtual environment:
 
-```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 3. Install dependencies:
 
-```bash
+
 pip install -r requirements.txt
 
 
 4. Run the FastAPI app:
 
-```bash
 uvicorn app.main:app --reload
