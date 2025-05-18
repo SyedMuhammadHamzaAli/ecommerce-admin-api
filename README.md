@@ -194,6 +194,6 @@ pip install -r requirements.txt
 You can populate the database with demo products, inventory, and sales data by running the seed script:
 ```bash
 python seed_db.py
-
+or
 python -m app.seed_db --force
 ```
