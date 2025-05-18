@@ -86,7 +86,7 @@ Registers a new product.
   }
 }
 ```
-### 📦 Inventory
+#### 📦 Inventory
 
 | Method | Endpoint                          | Description                                   |
 |--------|-----------------------------------|-----------------------------------------------|
