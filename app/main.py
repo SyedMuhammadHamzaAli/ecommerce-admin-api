@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import products, sales, inventory  # <-- these are your route files
+from app.routes import products, sales, inventory  
 
 app = FastAPI()
 
