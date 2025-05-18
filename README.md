@@ -124,3 +124,52 @@ Updates stock for a product and logs the change history.
 ### 📜 GET /inventory/1/history
 
 Returns historical stock changes for product with ID 
+
+
+## 📈 Sales
+
+| Method | Endpoint                           | Description                                                        |
+|--------|------------------------------------|--------------------------------------------------------------------|
+| GET    | `/sales/`                          | Fetch sales, filter by date/category/product.                      |
+| GET    | `/sales/revenue`                   | Revenue in specified period (daily, weekly, etc.).                 |
+| GET    | `/sales/revenue/compare`           | Compare revenue across two date ranges.                            |
+| GET    | `/sales/revenue/by-category`       | Revenue grouped by product category.                               |
+| GET    | `/sales/summary`                   | Sales summary by period with quantity & revenue.                   |
+| GET    | `/sales/best-sellers`              | Top selling products in a date/category filter.                    |
+
+---
+
+### 📊 GET `/sales/?start_date=2024-01-01&end_date=2024-01-31&category=Electronics`
+
+Returns sales in the given date and category range.
+
+---
+
+### 💰 GET `/sales/revenue?period=monthly`
+
+Returns revenue from the last month.
+
+---
+
+### 🔄 GET `/sales/revenue/compare?start_date_1=2024-01-01&end_date_1=2024-01-31&start_date_2=2024-02-01&end_date_2=2024-02-28`
+
+Compares revenue between two custom date ranges.
+
+---
+
+### 📂 GET `/sales/revenue/by-category`
+
+Returns total revenue grouped by product category.
+
+---
+
+### 📆 GET `/sales/summary?period=weekly&category=Books`
+
+Returns weekly sales summaries for the *Books* category.
+
+---
+
+### 🏆 GET `/sales/best-sellers?top_n=5&category=Books`
+
+Returns the top 5 best-selling products in the *Books* category.
+
