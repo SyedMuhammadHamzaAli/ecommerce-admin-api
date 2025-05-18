@@ -1,15 +1,9 @@
-# E-Commerce Admin API
+# 🛒 E-Commerce Admin API
 
-This is a backend E-Commerce Admin API developed using FastAPI and PostgreSQL. It provides functionality for managing products, tracking inventory, analyzing sales performance, and generating revenue reports.
-
----
-
+This is a backend **E-Commerce Admin API** developed using **FastAPI** and **PostgreSQL**. It provides functionality for managing products, tracking inventory, analyzing sales performance, and generating revenue reports.
 
 ---
 
-## 📁 Folder Structure (Markdown)
-
-```markdown
 ## 📁 Project Structure
 
 ```text
@@ -25,6 +19,8 @@ app/
 │
 ├── main.py               # FastAPI entry point
 └── seed_db.py            # Demo data seeding
+
+
 
 
 
